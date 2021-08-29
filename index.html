@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Document</title>
+  <title>Red Movilidad Sostenible 2030</title>
 </head>
 <body>
  <div class="d-flex h-100 text-center text-white bg-dark_our">
    <header class="mb-auto">
     <div>
-      <img src="img/logo/logowhite.png" width="200" class="float-md-start mb-0">
+      <img src="img/logo/logowhite.png" width="200" class="float-md-start mb-0" onclick="location.href='index.html'">
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Servicios</a>
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="#noticias">Noticias</a>
+          <a class="nav-link" href="#footer">Contacto</a>
         </nav>
       </div>
   </header>
@@ -24,14 +25,13 @@
     <h1 class="main_title">Iniciativa Sostenible.</h1>
     <p class="lead"><b><b>Red Movilidad Sostenible 2030 es una Red de expertos, Organismos Científicos, Organizaciones Públicas y Privadas de todos los países y principales ciudades de Latinoamérica, que trabajan en forma mancomunada para contribuir con los Objetivos de Desarrollo Sostenible de Naciones Unidas 2030.</b></b></p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+      <a href="#lared" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
     </p>
   </main>
   </div>
 </div>
-<div class="row align-items-md-stretch">
+<div class="row align-items-md-stretch" id="noticias">
       <h1 class="titulo_noticias">Noticias</h1>
-
       <div class="col-md-4">
         <div class="h-100 p-5 text-white bg-dark rounded-3">
           <h2>El COVID-19 agranda el desafío para lograr la Agenda 2030 de desarrollo sostenible</h2>
@@ -90,15 +90,15 @@
        </div>      
     </div>
   </div>
-  <div class="container-fluid_3">
+  <div class="container-fluid_3" id="lared">
     <div class="row">
       <div class="col-md-12_3 col-xs-12">
         <h1 class="cont_3_title">Propósitos de la Red</h1><br>
         <p class="cont_3_parr">Articular acciones entre todos los actores claves realizando estudios, análisis, promoción y difusión de sistemas de movilidad seguros y sostenibles para Latinoamérica contribuyendo al desarrollo de:</p><br>
         <div class="cont3_list">
-          <span class="number">1.</span><span class="text">Ciudades inteligentes, con infraestructura inclusiva, segura y sostenible.</span><br>
-          <span class="number">2.</span><span class="text">Una energía moderna, adoptando medidas urgentes para atacar el cambio climático.</span><br>
-          <span class="number">3.</span><span class="text">Datos abiertos con índices y estadísticas de toda la región.</span>
+          <span class="number">1.</span><span class="text"> Ciudades inteligentes, con infraestructura inclusiva, segura y sostenible.</span><br>
+          <span class="number">2.</span><span class="text"> Una energía moderna, adoptando medidas urgentes para atacar el cambio climático.</span><br>
+          <span class="number">3.</span><span class="text"> Datos abiertos con índices y estadísticas de toda la región.</span>
         </div>
     </div>
   </div>  
@@ -121,24 +121,33 @@
         <h1 class="cont_5_title">RED</h1>
         <h2>Actores Clave:</h2>
         <ul>
-          <li>Consejo de Movilidad Sostenible y Segura</li>
-          <li>Red de Expertos</li>
-          <li>Red de Organismos Públicos y Regionales</li>
-          <li>Red de ONGs</li>
-          <li>Consejo de Sectores: Automotriz, Transporte, Seguros</li>
-          <li>Consejo de Empresas: Tecnología, Energía, Medio Ambiente</li>
-          <li>Otros Consejos</li>
+          <li id="cont_5_list">Consejo de Movilidad Sostenible y Segura</li>
+          <li id="cont_5_list">Red de Expertos</li>
+          <li id="cont_5_list">Red de Organismos Públicos y Regionales</li>
+          <li id="cont_5_list">Red de ONGs</li>
+          <li id="cont_5_list">Consejo de Sectores: Automotriz, Transporte, Seguros</li>
+          <li id="cont_5_list">Consejo de Empresas: Tecnología, Energía, Medio Ambiente</li>
+          <li id="cont_5_list">Otros Consejos</li>
         </ul>
        </div>
     </div>
   </div>
 </div>
-<div class="container-fluid_footer">
+<div class="container-fluid_footer" id="footer">
   <div class="row">
     <div class="col-md-12 col-xs-12">
-      
-    </div>
-    
+      <div class="logo_footer">
+        <img src="img/logo/logowhite.png" class="logo_footer_img">
+      </div>
+      <div class="social-media">
+        <ul class="social-icons">
+          <li id="footer_list"><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+          <li id="footer_list"><a class="Mail" href="#"><i class="fa fa-envelope"></i></a></li>
+          <li id="footer_list"><a class="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>    
+        </ul>
+      </div>  
+      <hr class="linea">
+    </div> 
   </div>  
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
