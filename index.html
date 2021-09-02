@@ -37,26 +37,34 @@
       <h1 class="titulo_noticias">Noticias</h1>
       <div class="col-md-4">
         <div class="h-100 p-5 text-white bg-dark rounded-3">
-          <h2>El COVID-19 agranda el desafío para lograr la Agenda 2030 de desarrollo sostenible</h2>
+          <h2 id="titulos_noticias">El COVID-19 agranda el desafío para lograr la Agenda 2030 de desarrollo sostenible</h2>
           <p id="cont1_text">El mundo no estaba en camino de cumplir los 17 Objetivos de Desarrollo Sostenible antes de que golpeara el COVID-19, y ahora el desafío se ha magnificado muchas veces, según un nuevo informe de la ONU que indica que los países deben tomar medidas 'críticas' para salir de la pandemia, durante los próximos 18 meses.</p>
-          <button class="btn btn-outline-light" onclick="location.href='https://news.un.org/es/story/2021/07/1494042'" type="button">Read More</button>
+          <button class="btn btn-outline-light" onclick="location.href='https://news.un.org/es/story/2021/07/1494042'" type="button">Mas info</button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Encuentro sobre movilidad sustentable</h2>
-          <p id="cont1_text">La Agencia I+D+i organizó una charla sobre la movilidad sustentable y su impacto en la producción y el ambiente en conjunto con el Ministerio de Ambiente y Desarrollo Sostenible, el Ministerio de Desarrollo Productivo y la Red ISPA.</p>
-          <button class="btn btn-outline-secondary" onclick="location.href='https://www.youtube.com/watch?v=dv5GRQdJMyE'" type="button">Read More</button>
+          <h2 id="titulos_noticias">Línea de Base e Impacto de la Movilidad Eléctrica en Argentina</h2>
+          <p id="cont1_text">Se llevó a cabo la Conferencia # 1 de la Red de Movilidad Sostenible 2030, a cargo de los consultores y expertos en la temática, Pedro Scarpinelli y Leonardo Iannuzzi, que presentaron "Línea de Base e Impacto de los Objetivos de Movilidad Eléctrica en Argentina". Sobre la base del estudio que se están desarrollando para instituciones de Naciones Unidas y del Gobierno de Argentina, siempre en el marco de los ODS 2030..</p>
+          <button data-pop-target ='#pop' class="btn btn-outline-secondary" type="button">Mas info</button>
         </div>
       </div>
        <div class="col-md-4">
         <div class="h-100 p-5 text-white bg-dark rounded-3">
-          <h2>Change the background</h2>
-          <p id="cont1_text">Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
+          <h2 id="titulos_noticias">Encuentro sobre movilidad sustentable</h2>
+          <p id="cont1_text">La Agencia I+D+i organizó una charla sobre la movilidad sustentable y su impacto en la producción y el ambiente en conjunto con el Ministerio de Ambiente y Desarrollo Sostenible, el Ministerio de Desarrollo Productivo y la Red ISPA.<br><br>En el encuentro participaron funcionarios y especialistas que expusieron sobre los diferentes ejes de la movilidad sustentable</p>
+          <button class="btn btn-outline-light" onclick="location.href='https://www.argentina.gob.ar/noticias/encuentro-sobre-movilidad-sustentable'"type="button">Mas info</button>
         </div>
     </div>
   </div>
+  <div id="pop" class="pop">
+    <button data-close-button class="close-pop">&times</button>
+    <img class="pop-img" src="img/pop-img.png">
+ </div>
+ <div class="overlay-pop" id="overlay">
+   
+ </div>
+          
   <div class="container-fluid_2">
      <div class="row">
        <div class="col-md-6 col-xs-12">
@@ -153,6 +161,7 @@
     </div> 
   </div>  
 </div>
+<script src="JS/javascript.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

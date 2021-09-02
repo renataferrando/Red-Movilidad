@@ -10,6 +10,7 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); 
   font-family: roboto, sans-serif;
+  text-shadow: none;
 }
 #cont1_text {
   text-align: justify;
@@ -18,7 +19,9 @@ body {
 .cover-container {
   max-width: 42em;
 }
-
+#titulos_noticias {
+  font-size: 22pt;
+}
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
@@ -56,6 +59,47 @@ body {
   font-size: 38pt;
 }
 
+/*pop*/
+.pop {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  width: 200px;
+  max-width: 80%;
+}
+
+.pop-img{
+  width: 485px;
+}
+
+.pop.active {
+   transform: translate(-50%, -40%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 248, 255, 0.5);
+  pointer-events: none;
+
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+
 .d-flex {
   height: 700px !important;
 
@@ -91,7 +135,7 @@ body {
 .titulo_noticias {
   text-align: center;
   margin-bottom: 60px;
-  font-weight: 200;
+  font-weight: 400;
 }
 .container-fluid_2 {
   background-color: #059e7a;
@@ -104,7 +148,7 @@ body {
 }
 .cont_2_parr {
   font-size: 16pt;
-  font-weight: 200;
+  font-weight: 400;
 }
 .carousel {
   margin-bottom: 4rem;
@@ -161,7 +205,7 @@ body {
   text-align: center;
   margin-top: 25px;
   font-size:16pt;
-  font-weight: 200;
+  font-weight: 400;
 }
 .number {
   font-size: 38pt;
@@ -171,7 +215,7 @@ body {
 .text {
   padding: 20px;
   font-size: 18pt;
-  font-weight: 200;
+  font-weight: 400;
 }
 .cont3_list {
   display: flex;
@@ -281,11 +325,29 @@ h2 {
  }
 
 @media only screen and (min-width: 360px) and (max-width: 1239px) {
+#noticias {
+  padding: 0;
+}
+.rounded-3 {
+  border-radius: 0 !important;
+}
 .d-flex {
   height: auto !important;
+  margin-bottom: 50px;
 }
 .row {
+  --bs-gutter-x: 0;
   padding: 20px;
+}
+.main_title {
+  margin-top: 30px;
+  font-size: 30pt;
+  margin-bottom: 25px;
+}
+.cont_2_title {
+  margin-top: 0;
+  font-size: 30pt;
+  margin-bottom: 25px;
 }
 .lead, #cont1_text, .cont_2_parr, .cont_3_parr, .cont_4_parr, #cont_5_list, .text {
   font-size: 14pt;
@@ -294,9 +356,10 @@ h2 {
   margin-bottom: 15px;
 }
 
-.main_title, .titulo_noticias, .cont_2_title, .cont_3_title, .cont_4_title, .cont_5_title, .number {
+.titulo_noticias, .cont_3_title, .cont_4_title, .cont_5_title, .number {
   font-size: 30pt;
   padding: 5px;
+  margin-top: 20px;
 }
 
 #text1 {
@@ -332,15 +395,13 @@ h2 {
     margin-top: 0;
   }
   .bg-dark_our {
-  background-image: url(../img/city3movil.jpg);
+  background-image: url(../img/city3d.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-   height: 100%;
+  background-position: right;
   }
   .video1 {
     width: 100%;
@@ -351,13 +412,9 @@ h2 {
   .container-fluid_5 {
    display: flex;
    justify-content: center;
-   background-image: url(../img/redbg-movil.jpg);
+   background-image: url(../img/redbg.jpg);
+   background-position: center;
    background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   width: 100%;
-   height: 100%;
-
   }
   .cont5_text {
     position: relative;
@@ -365,6 +422,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
     right: 0;
+    margin:  10px;
   }
   .logo_footer_img {
   width: 60%;
@@ -376,5 +434,13 @@ h2 {
     align-items: center;
     margin-top: 0;
   }
-
+  .cont3_list {
+    margin-bottom: 30px;
+  }
+  .container-fluid_2 {
+    margin-top: 0;
+  }
+  .carousel-item {
+    margin-top: 35px;
+  }
 }
