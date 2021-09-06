@@ -347,6 +347,15 @@ h2 {
   --bs-gutter-x: 0;
   padding: 20px;
 }
+.bg-dark_our {
+  background-image: url(../img/city3d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-attachment:inherit;
+  background-position: center right;
+}
 .main_title {
   margin-top: 30px;
   font-size: 30pt;
@@ -370,7 +379,7 @@ h2 {
 
 .cont_2_title {
   margin-top: 0;
-  font-size: 30pt;
+  font-size: 28pt;
   margin-bottom: 25px;
 }
 .lead, #cont1_text, .cont_2_parr, .cont_3_parr, .cont_4_parr, #cont_5_list, .text {
@@ -381,7 +390,7 @@ h2 {
 }
 
 .titulo_noticias, .cont_3_title, .cont_4_title, .cont_5_title, .number {
-  font-size: 30pt;
+  font-size: 28pt;
   padding: 5px;
   margin-top: 20px;
 }
@@ -422,7 +431,16 @@ h2 {
     width: 100%;
     margin:0;
     padding: 0;
-
+  }
+  .container-fluid_5 {
+    background-image: url(../img/redbg.jpg);
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: inherit;
+    background-position: center left;
   }
   .cont5_text {
     position: relative;
