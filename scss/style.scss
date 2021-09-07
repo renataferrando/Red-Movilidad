@@ -12,12 +12,28 @@ body {
   font-family: roboto, sans-serif;
   text-shadow: none;
 }
+header {
+  position: fixed;
+  z-index: 9999;
+  transition: all 200ms ease-in-out;
+}
+.scroll-up header {
+  background-color: black;
+
+}
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
 #cont1_text {
   text-align: justify;
   font-size: 14pt;
 }
 .cover-container {
   max-width: 42em;
+  margin-top: 60px;
+  justify-content: center;
+
 }
 #titulos_noticias {
   font-size: 22pt;
@@ -25,7 +41,7 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .8);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -51,8 +67,9 @@ body {
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: 15% 55%;
 }
+
 .float-md-start {
   cursor: pointer;
 }
@@ -98,13 +115,11 @@ body {
   pointer-events: all;
 }
 
-
 .d-flex {
   height: 700px !important;
-
 }
 .mb-auto {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   height: 100px;
   padding: 25px;
@@ -116,14 +131,12 @@ body {
 
 .main_title {
   font-size: 42pt;
+  text-shadow: 1px 1px 1px black;
 }
 .lead {
   font-size: 16pt;
-}
-
-.cover-container {
-  justify-content: center;
-  margin-top: -100px;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 300;
 }
 
 .row {
@@ -332,7 +345,7 @@ h2 {
   margin-top: 10px;
   text-align: center;
 }
-@media only screen and (min-width: 360px) and (max-width: 1239px) {
+@media only screen and (min-width: 360px) and (max-width: 900px) {
 #noticias {
   padding: 0;
 }
@@ -355,7 +368,7 @@ h2 {
   flex-direction: column;
   background-attachment:inherit;
   background-position: center right;
-}
+  }
 .main_title {
   margin-top: 30px;
   font-size: 30pt;
@@ -425,7 +438,7 @@ h2 {
     margin-bottom: 10px !important;
   }
   .cover-container {
-    margin-top: 0;
+    margin-top: 130px;
   }
   .video1 {
     width: 100%;
