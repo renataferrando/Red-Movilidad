@@ -61,6 +61,10 @@ header {
   background-attachment: fixed;
   background-position: 15% 55%; }
 
+.px-3 {
+  margin-top: 90px;
+  margin-bottom: 90px; }
+
 .float-md-start {
   cursor: pointer; }
 
@@ -99,9 +103,6 @@ header {
   opacity: 1;
   pointer-events: all; }
 
-.d-flex {
-  height: 700px !important; }
-
 .mb-auto {
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
@@ -116,7 +117,7 @@ header {
   text-shadow: 1px 1px 1px black; }
 
 .lead {
-  font-size: 16pt;
+  font-size: 18pt;
   text-shadow: 2px 2px 2px black;
   font-weight: 300; }
 
@@ -131,7 +132,7 @@ header {
 
 .container-fluid_2 {
   background-color: #059e7a;
-  height: 700px;
+  height: auto;
   margin-top: 55px; }
 
 .cont_2_title {
@@ -139,7 +140,7 @@ header {
   margin-bottom: 20px; }
 
 .cont_2_parr {
-  font-size: 16pt;
+  font-size: 18pt;
   font-weight: 400; }
 
 .carousel {
@@ -149,6 +150,9 @@ header {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10; }
+
+#carousel-cont {
+  align-self: center; }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
@@ -177,7 +181,7 @@ header {
 
 .container-fluid_3 {
   background-color: black;
-  height: 700px;
+  height: auto;
   color: white;
   align-items: center; }
 
@@ -191,7 +195,7 @@ header {
 .cont_3_parr {
   text-align: center;
   margin-top: 25px;
-  font-size: 16pt;
+  font-size: 18pt;
   font-weight: 400; }
 
 .number {
@@ -201,16 +205,17 @@ header {
 
 .text {
   padding: 20px;
-  font-size: 16pt;
+  font-size: 18pt;
   font-weight: 400; }
 
 .cont3_list {
   display: flex;
-  margin-top: 50px;
-  padding: 20px; }
+  margin-top: 30px;
+  padding: 20px;
+  margin-bottom: 30px; }
 
 .container-fluid_4 {
-  height: 700px;
+  height: auto;
   align-items: center;
   padding: 25px; }
 
@@ -221,7 +226,7 @@ header {
 
 .cont_4_parr {
   padding: 20px;
-  font-size: 14pt;
+  font-size: 18pt;
   text-align: justify;
   margin-right: 30px;
   margin-bottom: 25px; }
@@ -231,8 +236,11 @@ header {
   margin-left: 20px;
   width: 100%; }
 
+#video_cont {
+  align-self: center; }
+
 .container-fluid_5 {
-  height: 700px;
+  height: auto;
   background-image: url(../img/redbg.jpg);
   flex-direction: column;
   background-size: cover;
@@ -243,7 +251,6 @@ header {
   background-position: center center; }
 
 .cont5_text {
-  position: absolute;
   padding: 60px;
   background-color: white;
   right: 50px;
@@ -260,13 +267,13 @@ h2 {
   margin-bottom: 25px; }
 
 #cont_5_list {
-  font-size: 14pt;
+  font-size: 18pt;
   margin-top: 10px;
   list-style: none; }
 
 .container-fluid_footer {
   background-color: black;
-  height: 700px;
+  height: auto;
   display: flex;
   align-items: center; }
 
@@ -274,7 +281,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -70px; }
+  margin-top: 90px;
+  margin-bottom: 50px; }
 
 .logo_footer_img {
   width: 30%; }
@@ -305,7 +313,7 @@ h2 {
   margin-top: 10px;
   text-align: center; }
 
-@media only screen and (min-width: 360px) and (max-width: 900px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
   #noticias {
     padding: 0; }
   .rounded-3 {
@@ -313,7 +321,6 @@ h2 {
   .d-flex {
     height: auto !important;
     margin-bottom: 50px; }
-    
   .row {
     --bs-gutter-x: 0;
     padding: 20px; }
@@ -356,9 +363,8 @@ h2 {
     margin-top: 5px; }
   .cont3_list {
     display: inline-block;
-    margin-top: 50px;
-    padding: 10px;
-    margin-top: 0; }
+    margin-top: 20px;
+    padding: 10px; }
   .text {
     padding: 0; }
   .cont_3_parr {
@@ -373,7 +379,7 @@ h2 {
   .mb-0 {
     margin-bottom: 10px !important; }
   .cover-container {
-    margin-top: 0; }
+    margin-top: 130px; }
   .video1 {
     width: 100%;
     margin: 0;
