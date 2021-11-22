@@ -1,0 +1,417 @@
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */ }
+
+body {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  font-family: roboto, sans-serif;
+  text-shadow: none; }
+
+header {
+  position: fixed;
+  z-index: 9999;
+  transition: all 200ms ease-in-out; }
+
+.scroll-up header {
+  background-color: black; }
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0); }
+
+#cont1_text {
+  text-align: justify;
+  font-size: 14pt; }
+
+.cover-container {
+  max-width: 42em;
+  margin-top: 60px;
+  justify-content: center; }
+
+#titulos_noticias {
+  font-size: 22pt; }
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent; }
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25); }
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem; }
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff; }
+
+.bg-dark_our {
+  background-image: url(../img/city3d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-position: 15% 55%;
+  height: 100vh; }
+
+.px-3 {
+  margin-top: 90px;
+  margin-bottom: 90px; }
+
+.float-md-start {
+  cursor: pointer; }
+
+.titulo_noticias {
+  font-size: 38pt; }
+
+/*pop*/
+.pop {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  width: 200px;
+  max-width: 80%; }
+
+.pop-img {
+  width: 485px; }
+
+.pop.active {
+  transform: translate(-50%, -40%) scale(1); }
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 248, 255, 0.5);
+  pointer-events: none; }
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all; }
+
+.mb-auto {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100px;
+  padding: 25px; }
+
+.bg-white {
+  margin-top: 20px; }
+
+.main_title {
+  font-size: 42pt;
+  text-shadow: 1px 1px 1px black; }
+
+.lead {
+  font-size: 18pt;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 300; }
+
+.row {
+  padding: 50px;
+  margin-right: 0; }
+
+.titulo_noticias {
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 400; }
+
+.container-fluid_2 {
+  background-color: #059e7a;
+  height: auto;
+  margin-top: 55px; }
+
+.cont_2_title {
+  font-size: 40pt;
+  margin-bottom: 20px; }
+
+.cont_2_parr {
+  font-size: 18pt;
+  font-weight: 400; }
+
+.carousel {
+  margin-bottom: 4rem; }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10; }
+
+#carousel-cont {
+  align-self: center; }
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 25rem;
+  width: 100%;
+  margin-top: 100px; }
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+#myCarousel {
+  position: relative;
+  align-content: center; }
+
+#text1 {
+  margin-top: 90px;
+  color: white;
+  text-align: right;
+  margin-left: 0;
+  margin-right: 0; }
+
+.container-fluid_3 {
+  background-color: black;
+  height: auto;
+  color: white;
+  align-items: center; }
+
+.cont_3 {
+  margin-top: 60px; }
+
+.cont_3_title {
+  font-size: 40pt;
+  text-align: center; }
+
+.cont_3_parr {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18pt;
+  font-weight: 400; }
+
+.number {
+  font-size: 38pt;
+  font-weight: bold;
+  margin-top: 8px; }
+
+.text {
+  padding: 20px;
+  font-size: 18pt;
+  font-weight: 400; }
+
+.cont3_list {
+  display: flex;
+  margin-top: 30px;
+  padding: 20px;
+  margin-bottom: 30px; }
+
+.container-fluid_4 {
+  height: auto;
+  align-items: center;
+  padding: 25px; }
+
+.cont_4_title {
+  font-size: 40pt;
+  margin-bottom: 5px;
+  padding: 20px; }
+
+.cont_4_parr {
+  padding: 20px;
+  font-size: 18pt;
+  text-align: justify;
+  margin-right: 30px;
+  margin-bottom: 25px; }
+
+.video1 {
+  margin-top: 45px;
+  margin-left: 20px;
+  width: 100%; }
+
+#video_cont {
+  align-self: center; }
+
+.container-fluid_5 {
+  height: auto;
+  background-image: url(../img/redbg.jpg);
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-position: center center; }
+
+.cont5_text {
+  padding: 60px;
+  background-color: white;
+  right: 50px;
+  margin-top: 40px; }
+
+.cont_5_title {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 40pt; }
+
+h2 {
+  margin-left: 20px;
+  font-size: 20pt;
+  margin-bottom: 25px; }
+
+#cont_5_list {
+  font-size: 18pt;
+  margin-top: 10px;
+  list-style: none; }
+
+.container-fluid_footer {
+  background-color: black;
+  height: auto;
+  display: flex;
+  align-items: center; }
+
+.logo_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 50px; }
+
+.logo_footer_img {
+  width: 30%; }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px; }
+
+.social-icons a {
+  font-size: 20pt;
+  color: white; }
+
+#footer_list {
+  list-style: none;
+  display: inline;
+  padding: 20px; }
+
+.linea {
+  background-color: white;
+  height: 2px !important;
+  width: 90%;
+  border: none;
+  margin: 0 auto;
+  margin-top: 45px; }
+
+.copy {
+  margin-top: 10px;
+  text-align: center; }
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  #noticias {
+    padding: 0; }
+  .rounded-3 {
+    border-radius: 0 !important; }
+  .d-flex {
+    height: auto !important;
+    margin-bottom: 50px; }
+  .row {
+    --bs-gutter-x: 0;
+    padding: 20px; }
+  .bg-dark_our {
+    background-image: url(../img/city3d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: inherit;
+    background-position: center right; }
+  .main_title {
+    margin-top: 30px;
+    font-size: 30pt;
+    margin-bottom: 25px; }
+  .pop {
+    position: fixed;
+    transform: translate(10%, 0%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    max-width: 80%; }
+  .pop-img {
+    width: 300px; }
+  .pop.active {
+    transform: translate(-50%, -40%) scale(1); }
+  .cont_2_title {
+    margin-top: 0;
+    font-size: 28pt;
+    margin-bottom: 25px; }
+  .lead, #cont1_text, .cont_2_parr, .cont_3_parr, .cont_4_parr, #cont_5_list, .text {
+    font-size: 14pt;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 15px; }
+  .titulo_noticias, .cont_3_title, .cont_4_title, .cont_5_title, .number {
+    font-size: 28pt;
+    padding: 5px;
+    margin-top: 20px; }
+  #text1 {
+    margin-top: 5px; }
+  .cont3_list {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px; }
+  .text {
+    padding: 0; }
+  .cont_3_parr {
+    margin: 10px;
+    text-align: justify; }
+  .container-fluid_2, .container-fluid_3, .container-fluid_4, .container-fluid_5, #footer {
+    height: auto; }
+  .carousel-item {
+    margin-top: 0; }
+  .mb-auto {
+    height: auto; }
+  .mb-0 {
+    margin-bottom: 10px !important; }
+  .cover-container {
+    margin-top: 130px; }
+  .video1 {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .container-fluid_5 {
+    background-image: url(../img/redbg.jpg);
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: inherit;
+    background-position: center left; }
+  .cont5_text {
+    position: relative;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    right: 0;
+    margin: 10px; }
+  .logo_footer_img {
+    width: 60%;
+    margin-top: 50px; }
+  .logo_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0; }
+  .cont3_list {
+    margin-bottom: 30px; }
+  .container-fluid_2 {
+    margin-top: 0; }
+  .carousel-item {
+    margin-top: 35px; } }
